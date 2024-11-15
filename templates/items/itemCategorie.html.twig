@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Categorie{% endblock %}
+
+{% block body %}
+<section class="containerGeneralSite">
+  <a href={{path('app_items')}}>Retour</a>
+  
+{% for item in items %}
+<h2>{{item.nom}}</h2>
+<h3>{{item.categorie}}</h3>
+<img src="/uploads/{{asset(item.thumbnail)}}" alt="">
+<a href={{path('app_items_show', {'id': item.id})}}>Voir plus</a>
+{% endfor %}
+</section>
+{% endblock %}

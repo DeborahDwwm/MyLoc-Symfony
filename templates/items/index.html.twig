@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des outils{% endblock %}
+
+{% block body %}
+{% include 'navbar/navbar.html.twig' %}
+<section class="containerGeneralSite">
+<h1>Louer un outil</h1>
+<a href={{path('app_items')}}>Tout</a>
+
+
+{% for item in items %}
+<a href={{path('app_items_categorie_show', {'id': item.categorie.id})}}>{{item.categorie.nom}}</a>
+{% endfor %}
+
+{% for item in items %}
+<h2>{{item.nom}}</h2>
+<h3>{{item.categorie}}</h3>
+<img src="/uploads/{{asset(item.thumbnail)}}" alt="">
+<a href={{path('app_items_show', {'id': item.id})}}>Voir plus</a>
+
+{% endfor %}
+</section>
+{% endblock %}

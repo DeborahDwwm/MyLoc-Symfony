@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{item.nom}}{% endblock %}
+
+{% block body %}
+{% include 'navbar/navbar.html.twig' %}
+<section class="containerGeneralSite">
+<h1>Louer un outil</h1>
+<h2>{{item.nom}}</h2>
+<h3>{{item.categorie}}</h3>
+<img src="/uploads/{{asset(item.thumbnail)}}" alt="">
+<p>{{item.description}}</p>
+<a href="">Emprunter</a>
+</section>
+
+{% endblock %}

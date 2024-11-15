@@ -1,3 +1,114 @@
 body {
-    background-color: skyblue;
+    margin: auto;
+    box-sizing: border-box;
+    background-color:#c1dbac;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Page Home */
+
+.containerGeneral {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    color: #01533c;
+    background-image: url('../images/Leonardo_Phoenix_Create_a_vibrant_banner_for_MyLoc_a_tools_loa_2.jpg');
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.titreBanniere{
+    font-size: 2.5em;
+    color: #fefefe;
+    padding-bottom: 10px;
+}
+
+.banniere {
+    width: 100%;
+    height: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.communaute {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.inscription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #fefefe;
+    border-radius: 15px;
+    width: 40%;
+    padding: 50px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #fefefee9;
+}
+
+.connexion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #fefefe;
+    border-radius: 15px;
+    width: 40%;
+    padding: 20px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #fefefee9;
+}
+
+.boutonSite {
+    background-color:#89cd90;
+    border:1px solid #01533c;
+    border-radius: 15px;
+    color: #fefefe;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 50%;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+/* Navbar */
+.containerGeneralSite {
+    width: 80%;
+    margin: auto;
+    margin-top: 0;
+    
+} 
+.navbar {
+    background-color: #01533c;
+    margin: 0;
+}
+
+.navbarUl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.liNavbar {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.navbarLiens {
+    display: flex;
 }

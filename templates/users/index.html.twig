@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue {% endblock %}
+
+{% block body %}
+{% include 'navbar/navbar.html.twig' %}
+<section class="containerGeneralSite">
+<h1>Bienvenue {{ connectedUser.Prenom }}</h1>
+
+</section>
+
+{% endblock %}
